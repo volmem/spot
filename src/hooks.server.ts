@@ -1,7 +1,7 @@
 import { SvelteKitAuth } from "@auth/sveltekit"
-import GitHub from "@auth/core/providers/github"
-import { GITHUB_ID, GITHUB_SECRET } from "$env/static/private"
+import Spotify from "@auth/core/providers/spotify"
+import { SPOTIFY_ID, SPOTIFY_SECRET } from "$env/static/private"
 
 export const handle = SvelteKitAuth({
-  providers: [GitHub({ clientId: GITHUB_ID, clientSecret: GITHUB_SECRET })],
+  providers: [Spotify({ clientId: SPOTIFY_ID, clientSecret: SPOTIFY_SECRET })],
 })
